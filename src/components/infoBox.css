@@ -1,0 +1,9 @@
+.info-container {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+p,
+.city-name {
+  text-align: center;
+}
