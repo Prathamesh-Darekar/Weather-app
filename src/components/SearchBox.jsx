@@ -9,7 +9,7 @@ export const SearchBox = ({ data }) => {
   const API_KEY = "a120a093f3bf959b12c27985314023de";
   const [city, setCity] = useState("");
   async function getWeather() {
-    const GEOCODING_API_URL = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`;
+    const GEOCODING_API_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`;
     const response = await axios.get(GEOCODING_API_URL);
     const lat = response.data[0].lat;
     const lon = response.data[0].lon;
